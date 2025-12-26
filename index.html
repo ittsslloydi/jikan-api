@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Anime Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo" id="logo">🌙 Anime Finder</div>
+
+  <div class="nav-search">
+    <input type="text" id="searchInput" placeholder="Search anime..." />
+    <select id="genreSelect"></select>
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <div class="nav-actions">
+    <button id="favToggle">❤️ Favorites</button>
+    <button id="themeToggle">☀ Light Mode</button>
+  </div>
+</header>
+
+<section class="section-title">
+  <h2 id="sectionLabel">🔥 Currently Airing</h2>
+</section>
+
+<main id="animeResults" class="anime-grid"></main>
+
+<div class="pagination" id="pagination">
+  <button id="prevBtn">⬅ Prev</button>
+  <span id="pageIndicator">Page 1</span>
+  <button id="nextBtn">Next ➡</button>
+</div>
+
+<!-- MODAL -->
+<div id="animeModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModal">✖</span>
+    <img id="modalImage" />
+    <div class="modal-info">
+      <h2 id="modalTitle"></h2>
+      <p id="modalMeta"></p>
+      <p id="modalGenres"></p>
+      <p id="modalSynopsis"></p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
